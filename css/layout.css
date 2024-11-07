@@ -1,0 +1,228 @@
+/* These are some suggested groupings for your stylesheet... */
+:root
+{
+    --text-color: rgb(61, 61, 61);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    /*link google font*/
+    font-family: "Cascadia Code", monospace;
+    text-indent: 1rem;
+    margin: auto;
+    overflow-x: hidden;
+
+    /* repeats linear gradient comprised of 1px of transparent gray, and a majority of transparency.
+       This creates a grid like pattern that could otherwise be acheived through images.
+       I like the CSS approach!
+    */
+    background-image: repeating-linear-gradient(90deg, rgba(128, 128, 128, 0.2) 0px, rgba(128, 128, 128, 0.2) 1px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(0deg, rgba(128, 128, 128, 0.2) 0px, rgba(128, 128, 128, 0.2) 1px, transparent 1px, transparent 20px);
+}
+h1,h2,h3
+{
+    text-shadow: 2px 10px 22px rgb(99, 98, 98);
+}
+main > *
+{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+/* box sizing */
+
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+
+
+/* flexible content images code */
+
+
+/* navigation styles */
+nav
+{
+    top: 0;
+    position: sticky;
+    /* override padding applied to contents of main */
+    padding: 0;
+    z-index: 2; /*goes above image gallery*/
+}
+nav ul
+{
+    display: flex;
+    background-color: crimson;
+    
+    margin: 0;
+    padding: 1rem;
+    
+    list-style-type: none;
+}
+nav ul a
+{
+    text-decoration: none;
+    padding:1rem;
+    color: whitesmoke;
+    transition: background .15s ease-in-out;
+}
+nav ul a:hover
+{
+    background-color: rgb(197, 13, 49);
+}
+
+/* page header styles*/
+.header-content
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 80% 20%;
+
+    padding: 5rem 0 5rem 0;
+}
+.header-content #title
+{
+    display:flex;
+    width: fit-content;
+    align-items: center;
+}
+.header-content #title img
+{
+    width: 30px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+}
+.header-content #title img:hover
+{
+    background-color: #f83e3e;
+    transform:scale(105%);
+}
+.header-content p
+{
+    color: var(--text-color);
+    font-style: italic;
+}
+.header-content #pfp
+{
+    height: 15rem;
+    border-radius: 50%;
+    background-color: rgb(197, 197, 197);
+}
+
+/* main layout */
+.h-seperator
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.content
+{
+    margin: 1rem;
+    text-indent: 0;
+}
+.content:is(ul) li
+{
+    margin-top: 1rem;
+}
+#work-experience-content
+{
+    margin-left: 1rem;
+}
+.image-gallery .container
+{
+    padding: 0px !important;
+}
+.image-gallery .container-content .content
+{
+    display: grid;
+    overflow: hidden;
+    grid-gap: 1rem;
+}
+.image-gallery .container-content .image
+{
+    display: flex;
+    background-color:#f83e3e;
+    margin: 0;
+    /*https://stackoverflow.com/questions/14770312/how-to-achieve-chamfered-css-border-corners-rather-than-rounded-corners*/
+    clip-path: polygon(10% 0%, 100% 0%, 100% 70%, 90% 100%, 0% 100%, 0% 30%);
+}
+.image-gallery .container-content .image img
+{
+    margin: 2rem;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+.image-gallery .container-content .image p
+{
+    color: whitesmoke;
+    margin: auto 2rem;
+}
+
+form
+{
+    display: grid;
+    margin: 5rem;
+    grid-template-columns: min-content auto;
+}
+form span
+{
+    font-size: larger;
+}
+form input, form span
+{
+    font-family: "cascadia code", monospace;
+    width: 20rem;
+}
+form #text-holder span
+{
+    margin-bottom: 1rem;
+}
+form #text-holder
+{
+    margin: 1rem;
+    margin-top: 0;
+    display: grid;
+    grid-template-rows: min-content auto;
+}
+form input[type="submit"]
+{
+    background-color: limegreen;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover
+{
+    background-color: rgb(31, 152, 31);
+}
+
+/* styling for the section content */
+
+
+/* background colours for sections */
+
+
+/* form styling */
+
+
+/* footer styling */
+footer
+{
+    background-color: crimson;
+    padding: 1rem;
+    color: white;
+}
+footer a
+{
+    font-weight: bold;
+}
+

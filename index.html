@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Add your meta description" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Kristian Grey - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<body>
+
+    <!--REMOVE ANY CLASS OBJECT WHICH YOU DO NOT USE TO STYLE YOUR FILE//-->
+
+    <main>
+        <nav class="page-nav">
+            <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <header class="page-header">
+            <!-- The header element acts as an element for a document's intraductory content, or a series
+                 of navigational links to aid the user in their navigation. -->
+            <div class="header-content"> <!-- A div (short for division) is a divider element that groups elements together for styling or organizational purposes. -->
+                <div>
+                    <div id="title">
+                        <h1>Kristian Grey</h1>
+                        <a><img src="images/github-logo.png" alt="github logo"></a>
+                    </div>
+                    <p> An innovative, highly motivated and passionate <b>Computer Science</b> student.</p>
+                </div>
+                <img id="pfp" src="images/picture.png" alt="profile picture">
+            </div>
+        </header>
+
+        <div class="h-seperator">
+            <section id="about" class="about-me container">
+                <!-- The section tag here represents the about section of the document that has a distinct topic.
+                     Wheras a div element can be used for more arbitrary and 'hidden' use cases. -->
+                <div class="container-content">
+                    <h2>About Me</h2>
+                    <div class="content">
+                        Hi! My name is Kristian. I'm 18, and have a growing passion for <b>Coding</b> and <b>Computer
+                            Science</b>.
+                        I've been coding for about 8 years, and have created numerous projects along the way. I also
+                        play sports, such as Badminton
+                        and table tennis. I am currently studying Computer Science in <b>DCU (Dublin City
+                            University)</b>.
+                    </div>
+                    <h2>Personal Projects</h2>
+                    <ul class="content">
+                        <li><b><a href="https://drive.google.com/drive/folders/1yvGWKh-M9T9L3qiJ5OxBOvP6CkbdK2hA"
+                                    style="color:orange;">KLIB</a></b>: A memory management system for the C programming
+                            language.</li>
+                        <li><b><a href="https://github.com/TBCMDev/RedScript" style="color:orange;">RedScript</a></b>: A
+                            programming language designed to interpret high level code into Minecraft (Java) commands.
+                        </li>
+                        <li><b><a href="https://github.com/TBCMDev/Ember" style="color:orange;">Ember</a></b>: A high
+                            level interpreted programming language
+                            designed for all types of programmers.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="work" class="work-experience container">
+                <div class="container-content">
+                    <h2>Work Experience</h2>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <h3>Informatica
+                                    cloud-data company.</h3>
+                                <div id="work-experience-content"><i>Creation of
+                                        a recommendation engine.</i>
+                                    <p>
+                                        For Transition Year work experience, I worked with a friend of mine who works
+                                        at a cloud data company, Informatica. I created a recommendation engine in
+                                        Python
+                                        that analyzes user data to recommend certain products that the user is predicted
+                                        to like.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>Google Internship</h3>
+                                <div id="work-experience-content">
+                                    <i>Data analysis & group collaboration</i>
+                                    <p>
+                                        I recently completed a unique "internship" at Google, where I was part of the
+                                        "Innovation Lab" team—a small
+                                        group dedicated to exploring cutting-edge tech ideas. My role involved
+                                        collaborating with engineers on
+                                        hypothetical projects like Project Muse, an AI tool that generates creative
+                                        writing prompts, and Greenlight,
+                                        a sustainability-focused app concept that encourages eco-friendly habits.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br><br>
+
+        <section id="images" class="image-gallery container">
+
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <div class="content">
+
+                    <figure class="image">
+                        <img src="images/ember.png" alt="Programming language logo - voxel flames with gray background">
+                        <p>this is the logo for a project called <b>Ember</b>, my own programming language, is a project
+                            I've been working on for over a year.
+                            it employs high level syntax while also having low level functionality if needed.
+                            It is not strongly typed, but types are optional. It has since grown into another project of
+                            mine,
+                            a programming language that abstracts high level code into minecraft commands so that users
+                            can
+                            create maps and projects with ease and speed. It is called <b>RedScript</b>. I am passionate
+                            about these projects as
+                            I enjoy a hard challenge and I believe other people online would benefit from using them!
+                            Once Redscript is in a beta stage,
+                            you should be able to reach it through the url provided in the github readme <a
+                                href="https://github.com/TBCMDev/RedScript">here</a>.
+                        </p>
+                    </figure>
+
+                    <figure class="image">
+                        <img src="images/badminton.jpg" alt="badminton racket with shuttlecock">
+                        <p>I am also very passionate about sport. For about 5 years I have played badminton on and off.
+                            Now that I'm in college, I'm trying to devote more of my time
+                            to becoming a better player on possily a professional level.
+                        </p>
+                    </figure>
+
+                    <figure class="image">
+                        <img src="images/computer.jpg">
+                        <p>I am also passionate about computers. From using them to understanding how they work, I'm always trying to learn more everyday
+                            about the history and future of technology in our modern digitalized world!
+                        </p>
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <div class="content">
+                    <form action="https://formspree.io/kristiandgrey@gmail.com" method="post">
+                        <div>
+                            <span>Name</span>
+                            <p>
+                                <input id="contact-name" type="text" name="contact-name" placeholder="Your name" />
+                            </p>
+                            <span>Email</span>
+                            <p>
+                                <input id="contact-email" type="email" name="contact-email" placeholder="Your email" />
+                            </p>
+                            <span>Phone Number</span>
+                            <p>
+                                <input id="contact-phone" type="tel" name="contact-phone"
+                                    placeholder="Your phone number" />
+                            </p>
+                        </div>
+                        <div id="text-holder">
+                            <span>Message</span>
+                            <textarea id="contact-message" name="contact-message" rows="5"
+                                placeholder="your message"> </textarea>
+                        </div>
+                        <input type="submit" value="send my message" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer id="footer-layout">
+            <p> &copy; <a href="dcu.ie/">DCU 2023-2024</a>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">Kristian Grey</span>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">This is student coursework</span>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">Lecturer: <a href="http://www.computing.dcu.ie/~jkernan">Jane
+                        Kernan</a></span>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text"><a href="http://validator.w3.org/check?uri=referer"
+                        title="W3C HTML Validation Service">Valid HTML</a><br /></span>
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
